@@ -45,7 +45,7 @@ print(f"{y}, {gradient_descent(y, 10, 0.0001, 40000)}")
 
 
 
-def explore_function(f, x_range=(-2, 6), steps=10000):
+def explore_function(f, x_range=(-5, 6), steps=10000):
     """Просто посмотрим, как функция выглядит"""
     import matplotlib.pyplot as plt
     import numpy as np
@@ -69,3 +69,4 @@ def explore_function(f, x_range=(-2, 6), steps=10000):
     print(f"Приблизительный минимум: x ≈ {min_x:.4f}, f(x) ≈ {min_y:.4f}")
 
 
+explore_function(z)
