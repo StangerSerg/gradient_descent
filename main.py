@@ -36,12 +36,12 @@ def df(f, x):
     return res
 
 
-#print(f"{f5}, {gradient_descent(f5, 10, 0.01, 1000)}")
-# print(f"{z}, {gradient_descent(z, 10, 0.00005, 200000)}")
-# print(f"{z}, {gradient_descent(z, 0.1, 0.00005, 200000)}")
-# print(f"{z}, {gradient_descent(z, -5, 0.0002, 200000)}")
-# print(f"{y}, {gradient_descent(y, 10, 0.0001, 40000)}")
-print(f"{downstairs}, {gradient_descent(downstairs, 10, 0.00001, 40000)}")
+print(f"{f5}, {gradient_descent(f5, 10, 0.01, 1000)}")
+print(f"{z}, {gradient_descent(z, 10, 0.00005, 200000)}")
+print(f"{z}, {gradient_descent(z, 0.1, 0.00005, 200000)}")
+print(f"{z}, {gradient_descent(z, -5, 0.0002, 200000)}")
+print(f"{y}, {gradient_descent(y, 10, 0.0001, 40000)}")
+
 
 
 
