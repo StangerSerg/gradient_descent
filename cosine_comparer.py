@@ -91,11 +91,13 @@ class CosineComparer:
             case 0:
                 if return_float:
                     return similarity
-
                 return f"similarity {similarity:.2%}"
+                
             case 1:
                 return similarity >= sharpness
+                
             case 2:
                 return similarity >= sharpness, similarity
+                
             case _:
                 raise ValueError(f"mode is {mode}, should be 0, 1, or 'both'!")
