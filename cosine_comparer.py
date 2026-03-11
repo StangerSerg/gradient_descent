@@ -87,7 +87,6 @@ class CosineComparer:
         # Обработка разных режимов
         match mode:
 
-
             case 0:
                 if return_float:
                     return similarity
