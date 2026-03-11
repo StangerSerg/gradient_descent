@@ -12,10 +12,8 @@ class CosineComparer:
         """
         Args:
             ignore_non_alpha: Игнорировать символы не из алфавита
-            normalize_similarity: Нормализовать косинус в диапазон [0, 1]
         """
         self.ignore_non_alpha = ignore_non_alpha
-        self.normalize_similarity = normalize_similarity
 
     def _vectorize(self, word: str) -> np.ndarray:
         """Преобразует слово в частотный вектор"""
@@ -40,10 +38,6 @@ class CosineComparer:
             return 0.0
 
         similarity = (vec1 @ vec2) / (norm1 * norm2)
-
-        # Нормализуем в [0, 1] чтобы определить процент сходства
-        if self.normalize_similarity:
-            similarity = (similarity + 1) / 2
 
         return float(similarity)
 
